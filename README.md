@@ -5,7 +5,7 @@
 ## Author
 
 - Sadig Guliyev
-- [2410331]
+- 2410331
 
 ## Project description
 
@@ -19,12 +19,13 @@ used in a Python script on HPC infrastructure.
 
 - `bloom_filter.py`: Bloom filter implementation.
 - `tests/test_bloom_filter.py`: correctness and hash-distribution tests.
-- `benchmark.py`: benchmark of insertion, successful lookup and unsuccessful
+- `benchmark.py`: benchmark of insertion, successful lookup, and unsuccessful
   lookup operations.
 - `compression_analysis.py`: analysis of Bloom-filter compression ratio.
-- `run_benchmark.slurm`: SLURM job script for the HPC cluster.
-- `results/`: benchmark output files, CSV files and plots after running the
-  scripts.
+- `run_benchmark.slurm`: Slurm job script for running the benchmark on the
+  HPC cluster.
+- `results/`: benchmark output files, CSV files, and plots produced after
+  running the scripts.
 
 ## Installation
 
@@ -32,3 +33,19 @@ used in a Python script on HPC infrastructure.
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
+```
+
+## Run locally
+
+Run the test suite:
+
+```bash
+python -m pytest
+```
+
+Run the benchmark and compression analysis:
+
+```bash
+python benchmark.py
+python compression_analysis.py
+```
