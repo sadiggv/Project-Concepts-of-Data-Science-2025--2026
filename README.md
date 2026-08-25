@@ -22,7 +22,7 @@ used in a Python script on HPC infrastructure.
 - `benchmark.py`: benchmark of insertion, successful lookup, and unsuccessful
   lookup operations.
 - `compression_analysis.py`: analysis of Bloom-filter compression ratio.
-- - `false_positive_experiment.py`: experiment measuring the Bloom filter false-positive rate.
+- `false_positive_experiment.py`: experiment measuring the Bloom filter false-positive rate.
 - `run_benchmark.slurm`: Slurm job script for running the benchmark on the
   HPC cluster.
 - `results/`: benchmark output files, CSV files, and plots produced after
