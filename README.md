@@ -50,3 +50,9 @@ Run the benchmark and compression analysis:
 python benchmark.py
 python compression_analysis.py
 ```
+## Validation
+
+The Slurm script was syntax-checked before submission:
+
+```bash
+bash -n run_benchmark.slurm
