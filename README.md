@@ -5,7 +5,7 @@
 ## Author
 
 - Sadig Guliyev
-- 2410331
+- 2470331
 
 ## Project description
 
